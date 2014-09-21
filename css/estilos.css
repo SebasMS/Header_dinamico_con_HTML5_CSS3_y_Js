@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #ecf0f1;
+}
+
+header{
+	background-color: #252932;
+	margin-bottom: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.cover{
+	margin: auto;
+	max-width: 1000px;
+	overflow: hidden;
+	width: 90%;
+}
+
+header .logo{
+	color: #f2f2f2;
+	float: left;
+	font-size: 50px;
+	line-height: 200px; /* Tamaño de línea */
+}
+
+header nav{
+	float: right;
+	line-height: 200px;
+}
+
+header nav a{
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: normal; /* Para resetear los otros line-height*/
+	padding: 10px 20px;
+	text-decoration: none;	
+	-ms-transition: all 500ms ease;
+	-mz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;	
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+header nav a:hover{
+	background-color: #2ecc71;
+	border-radius: 50px;
+}
+
+.header2{
+	height: 100px;
+	position: fixed;	
+}
+
+.header2 .logo{
+	font-size: 30px;
+	line-height: 100px;
+}
+
+.header2 nav{
+	line-height: 100px;
+}
+
+.content .message{
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 60px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.content p{
+	margin-bottom: 1em;
+	text-align: justify;
+}
+
+/* Estilos adaptables a móviles */
+@media screen and (max-width: 950px){
+	header .logo, header nav{
+		line-height: 100px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.header2{
+		height: auto;
+	}
+
+	.header2 .logo, .header2 nav{
+		line-height: 50px;
+	}
+}
